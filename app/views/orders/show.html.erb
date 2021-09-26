@@ -3,6 +3,10 @@
 <p>
   <strong>Quantity:</strong>
   <%= @order.quantity %>
+  <strong>Total_Price:</strong>
+  <%= @order.total_price %>
+  <strong>Customer:</strong>
+  <%= @order.customer.name%>
 </p>
 
 <%= link_to 'Edit', edit_order_path(@order) %> |

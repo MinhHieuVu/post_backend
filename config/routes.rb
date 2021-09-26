@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :foods
+  resources :categories
   resources :orders
   resources :customers
   resources :restaurants
@@ -8,6 +10,6 @@ Rails.application.routes.draw do
     registrations: "users/registrations"
   }
 
-  root "users#registrations"
+  root "restaurants#index"
 
 end
